@@ -1,0 +1,1917 @@
+Profiling aou at thread counts: 1 2 4 8 16 32 64 128 256 512
+Results will be written to perf/aou_j100
+
+=== Running with 1 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	1
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t1_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t1_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = -1398172828
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00205275  SE : 0.000484293
+Sigma^2_gxe[0] : 0.216005  SE : 0.00195349
+Sigma^2_gxe[1] : 0.0198267  SE : 0.00128694
+Sigma^2_gxe[2] : -0.00672497  SE : 0.000793579
+Sigma^2_gxe[3] : -0.00112365  SE : 0.000676493
+Sigma^2_e : 0.945628  SE : 0.000518789
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00205258 SE : 0.000484253
+h2_gxe[0] : 0.054267 SE : 0.000477281
+h2_gxe[1] : 0.00239276 SE : 0.000154537
+h2_gxe[2] : -0.00395531 SE : 0.000468607
+h2_gxe[3] : -0.000281944 SE : 0.000169791
+Total h2 : 0.0544751 SE: 0.000518733
+Total h2_g : 0.00205258 SE: 0.000484253
+Total h2_gxe : 0.054267 SE: 0.000477281
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00205258 SE : 0.000484253
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.89938e-11
+GENIE ran successfully. Time elapsed = 6331.52 seconds 
+Profiling data written to: perf/aou_j100/aou_t1_timing.csv
+
+=== Running with 2 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	2
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t2_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t2_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = -459529002
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : -0.0043855  SE : 0.000827167
+Sigma^2_gxe[0] : 0.255945  SE : 0.00213599
+Sigma^2_gxe[1] : 0.0367755  SE : 0.00184198
+Sigma^2_gxe[2] : 0.00269965  SE : 0.00139911
+Sigma^2_gxe[3] : -0.00131249  SE : 0.000419522
+Sigma^2_e : 0.93465  SE : 0.000602068
+**************************************************
+Heritabilities: 
+h2_g[0] : -0.00438501 SE : 0.000827077
+h2_gxe[0] : 0.0641869 SE : 0.000530305
+h2_gxe[1] : 0.00440726 SE : 0.000219676
+h2_gxe[2] : 0.0015724 SE : 0.00081403
+h2_gxe[3] : -0.000330151 SE : 0.000105566
+Total h2 : 0.0654514 SE: 0.000602002
+Total h2_g : -0.00438501 SE: 0.000827077
+Total h2_gxe : 0.0641869 SE: 0.000530305
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : -0.00438501 SE : 0.000827077
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.57301e-11
+GENIE ran successfully. Time elapsed = 4748.01 seconds 
+Profiling data written to: perf/aou_j100/aou_t2_timing.csv
+
+=== Running with 4 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	4
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t4_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t4_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 907005023
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00352595  SE : 0.000839441
+Sigma^2_gxe[0] : 0.191441  SE : 0.00144718
+Sigma^2_gxe[1] : 0.0206425  SE : 0.00119513
+Sigma^2_gxe[2] : -0.0100229  SE : 0.00154506
+Sigma^2_gxe[3] : -0.00167951  SE : 0.000607869
+Sigma^2_e : 0.952072  SE : 0.000401889
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00352564 SE : 0.000839368
+h2_gxe[0] : 0.0483163 SE : 0.000357738
+h2_gxe[1] : 0.00249465 SE : 0.00014397
+h2_gxe[2] : -0.00588283 SE : 0.000909853
+h2_gxe[3] : -0.000422501 SE : 0.000153025
+Total h2 : 0.0480313 SE: 0.000401845
+Total h2_g : 0.00352564 SE: 0.000839368
+Total h2_gxe : 0.0483163 SE: 0.000357738
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00352564 SE : 0.000839368
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 6.07304e-11
+GENIE ran successfully. Time elapsed = 3938.64 seconds 
+Profiling data written to: perf/aou_j100/aou_t4_timing.csv
+
+=== Running with 8 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	8
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t8_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t8_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 509644011
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00230132  SE : 0.000614495
+Sigma^2_gxe[0] : 0.175378  SE : 0.00136316
+Sigma^2_gxe[1] : 0.0245339  SE : 0.00131216
+Sigma^2_gxe[2] : -0.00793505  SE : 0.00107378
+Sigma^2_gxe[3] : -0.000168549  SE : 0.000642716
+Sigma^2_e : 0.955737  SE : 0.000392213
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.0023011 SE : 0.000614436
+h2_gxe[0] : 0.0438191 SE : 0.000334723
+h2_gxe[1] : 0.00295092 SE : 0.000157059
+h2_gxe[2] : -0.00466168 SE : 0.000633528
+h2_gxe[3] : -4.21513e-05 SE : 0.000160741
+Total h2 : 0.0443673 SE: 0.00039217
+Total h2_g : 0.0023011 SE: 0.000614436
+Total h2_gxe : 0.0438191 SE: 0.000334723
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.0023011 SE : 0.000614436
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.90072e-11
+GENIE ran successfully. Time elapsed = 3719.69 seconds 
+Profiling data written to: perf/aou_j100/aou_t8_timing.csv
+
+=== Running with 16 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	16
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t16_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t16_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 1576319405
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.000937364  SE : 0.000655247
+Sigma^2_gxe[0] : 0.278975  SE : 0.00207835
+Sigma^2_gxe[1] : 0.0204083  SE : 0.00118983
+Sigma^2_gxe[2] : -0.00491866  SE : 0.00108986
+Sigma^2_gxe[3] : -0.000628445  SE : 0.000613915
+Sigma^2_e : 0.929882  SE : 0.000578626
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00093727 SE : 0.000655181
+h2_gxe[0] : 0.0698675 SE : 0.000516173
+h2_gxe[1] : 0.00245555 SE : 0.000142409
+h2_gxe[2] : -0.00288424 SE : 0.000640569
+h2_gxe[3] : -0.00015727 SE : 0.000153652
+Total h2 : 0.0702188 SE: 0.000578564
+Total h2_g : 0.00093727 SE: 0.000655181
+Total h2_gxe : 0.0698675 SE: 0.000516173
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00093727 SE : 0.000655181
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 6.58701e-11
+GENIE ran successfully. Time elapsed = 3873.08 seconds 
+Profiling data written to: perf/aou_j100/aou_t16_timing.csv
+
+=== Running with 32 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	32
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t32_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t32_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 374051410
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : -6.33781e-05  SE : 0.000650017
+Sigma^2_gxe[0] : 0.283657  SE : 0.00238758
+Sigma^2_gxe[1] : 0.0122652  SE : 0.000768572
+Sigma^2_gxe[2] : -0.00257886  SE : 0.00118206
+Sigma^2_gxe[3] : -0.00141117  SE : 0.000610945
+Sigma^2_e : 0.929579  SE : 0.000593607
+**************************************************
+Heritabilities: 
+h2_g[0] : -6.33726e-05 SE : 0.000649961
+h2_gxe[0] : 0.0709606 SE : 0.000576907
+h2_gxe[1] : 0.00148533 SE : 9.28019e-05
+h2_gxe[2] : -0.00150681 SE : 0.000691454
+h2_gxe[3] : -0.000354209 SE : 0.00015343
+Total h2 : 0.0705216 SE: 0.000593543
+Total h2_g : -6.33726e-05 SE: 0.000649961
+Total h2_gxe : 0.0709606 SE: 0.000576907
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : -6.33726e-05 SE : 0.000649961
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.49495e-11
+GENIE ran successfully. Time elapsed = 3971.47 seconds 
+Profiling data written to: perf/aou_j100/aou_t32_timing.csv
+
+=== Running with 64 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	64
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t64_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t64_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = -821184788
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00854874  SE : 0.000561449
+Sigma^2_gxe[0] : 0.268504  SE : 0.00252345
+Sigma^2_gxe[1] : 0.0224965  SE : 0.00147031
+Sigma^2_gxe[2] : -0.01788  SE : 0.000939099
+Sigma^2_gxe[3] : -0.00101563  SE : 0.000452659
+Sigma^2_e : 0.932161  SE : 0.000652144
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00854797 SE : 0.000561389
+h2_gxe[0] : 0.0675149 SE : 0.000629724
+h2_gxe[1] : 0.00272127 SE : 0.000177131
+h2_gxe[2] : -0.0105892 SE : 0.00056101
+h2_gxe[3] : -0.00025488 SE : 0.000113688
+Total h2 : 0.0679401 SE: 0.000652073
+Total h2_g : 0.00854797 SE: 0.000561389
+Total h2_gxe : 0.0675149 SE: 0.000629724
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00854797 SE : 0.000561389
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.30533e-11
+GENIE ran successfully. Time elapsed = 4498.88 seconds 
+Profiling data written to: perf/aou_j100/aou_t64_timing.csv
+
+=== Running with 128 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	128
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t128_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t128_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 208824539
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : -0.0013574  SE : 0.000776582
+Sigma^2_gxe[0] : 0.226817  SE : 0.00195564
+Sigma^2_gxe[1] : 0.0310318  SE : 0.00156513
+Sigma^2_gxe[2] : -0.00192127  SE : 0.00120993
+Sigma^2_gxe[3] : 2.41796e-05  SE : 0.000542815
+Sigma^2_e : 0.942154  SE : 0.000564565
+**************************************************
+Heritabilities: 
+h2_g[0] : -0.00135724 SE : 0.000776493
+h2_gxe[0] : 0.0567043 SE : 0.000478997
+h2_gxe[1] : 0.00371713 SE : 0.000186328
+h2_gxe[2] : -0.00112193 SE : 0.000707022
+h2_gxe[3] : 6.03862e-06 SE : 0.000135561
+Total h2 : 0.0579483 SE: 0.000564504
+Total h2_g : -0.00135724 SE: 0.000776493
+Total h2_gxe : 0.0567043 SE: 0.000478997
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : -0.00135724 SE : 0.000776493
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.79013e-11
+GENIE ran successfully. Time elapsed = 5349.11 seconds 
+Profiling data written to: perf/aou_j100/aou_t128_timing.csv
+
+=== Running with 256 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	256
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t256_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t256_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = 1667587686
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.000912266  SE : 0.000540654
+Sigma^2_gxe[0] : 0.25375  SE : 0.00200475
+Sigma^2_gxe[1] : 0.0235564  SE : 0.00141572
+Sigma^2_gxe[2] : -0.00506646  SE : 0.000939552
+Sigma^2_gxe[3] : -0.00194105  SE : 0.000602775
+Sigma^2_e : 0.936305  SE : 0.000531936
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.000912149 SE : 0.000540586
+h2_gxe[0] : 0.0634998 SE : 0.000494146
+h2_gxe[1] : 0.00284194 SE : 0.000169989
+h2_gxe[2] : -0.00296852 SE : 0.000551952
+h2_gxe[3] : -0.000488366 SE : 0.000151776
+Total h2 : 0.063797 SE: 0.000531878
+Total h2_g : 0.000912149 SE: 0.000540586
+Total h2_gxe : 0.0634998 SE: 0.000494146
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.000912149 SE : 0.000540586
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 6.83824e-11
+GENIE ran successfully. Time elapsed = 7088.26 seconds 
+Profiling data written to: perf/aou_j100/aou_t256_timing.csv
+
+=== Running with 512 thread(s) ===
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+####################### Parameters #########################
+#covariate	sim_data/aou/covariates.csv
+#environment	sim_data/aou/environment.csv
+#genotype	sim_data/aou/genotypes
+#model	G+GxE
+#nthreads	512
+#num_jack	100
+#num_vec	10
+#output	perf/aou_j100/aou_t512_results.out
+#phenotype	sim_data/aou/phenotype.csv
+#profile	1
+#profile_out	perf/aou_j100/aou_t512_timing.csv
+#verbose	0
+############################################################
+# Estimating G and GxE heritability (no heterogeneous noise)
+# The intercept term *will* be added to any fixed-effect covariates
+# After projecting out the covariates, the phenotype vector *will* be standardized
+
+Number of SNPs = 454207
+Number of individuals = 285124
+Reading in 4 environmental variables ...
+WARNING: no annotation file provided. All SNPs will be assigned to a single annotation
+Number of annotations in annotation file = 1
+Number of SNPs in annotation 0 = 454207
+Number of SNPs selected according to annotation file = 454207
+Reading in 27 covariates ...
+Seed = -512450930
+Regressing covariates
+
+Reading genotypes ...
+Reading jackknife block 0
+Reading jackknife block 1
+Reading jackknife block 2
+Reading jackknife block 3
+Reading jackknife block 4
+Reading jackknife block 5
+Reading jackknife block 6
+Reading jackknife block 7
+Reading jackknife block 8
+Reading jackknife block 9
+Reading jackknife block 10
+Reading jackknife block 11
+Reading jackknife block 12
+Reading jackknife block 13
+Reading jackknife block 14
+Reading jackknife block 15
+Reading jackknife block 16
+Reading jackknife block 17
+Reading jackknife block 18
+Reading jackknife block 19
+Reading jackknife block 20
+Reading jackknife block 21
+Reading jackknife block 22
+Reading jackknife block 23
+Reading jackknife block 24
+Reading jackknife block 25
+Reading jackknife block 26
+Reading jackknife block 27
+Reading jackknife block 28
+Reading jackknife block 29
+Reading jackknife block 30
+Reading jackknife block 31
+Reading jackknife block 32
+Reading jackknife block 33
+Reading jackknife block 34
+Reading jackknife block 35
+Reading jackknife block 36
+Reading jackknife block 37
+Reading jackknife block 38
+Reading jackknife block 39
+Reading jackknife block 40
+Reading jackknife block 41
+Reading jackknife block 42
+Reading jackknife block 43
+Reading jackknife block 44
+Reading jackknife block 45
+Reading jackknife block 46
+Reading jackknife block 47
+Reading jackknife block 48
+Reading jackknife block 49
+Reading jackknife block 50
+Reading jackknife block 51
+Reading jackknife block 52
+Reading jackknife block 53
+Reading jackknife block 54
+Reading jackknife block 55
+Reading jackknife block 56
+Reading jackknife block 57
+Reading jackknife block 58
+Reading jackknife block 59
+Reading jackknife block 60
+Reading jackknife block 61
+Reading jackknife block 62
+Reading jackknife block 63
+Reading jackknife block 64
+Reading jackknife block 65
+Reading jackknife block 66
+Reading jackknife block 67
+Reading jackknife block 68
+Reading jackknife block 69
+Reading jackknife block 70
+Reading jackknife block 71
+Reading jackknife block 72
+Reading jackknife block 73
+Reading jackknife block 74
+Reading jackknife block 75
+Reading jackknife block 76
+Reading jackknife block 77
+Reading jackknife block 78
+Reading jackknife block 79
+Reading jackknife block 80
+Reading jackknife block 81
+Reading jackknife block 82
+Reading jackknife block 83
+Reading jackknife block 84
+Reading jackknife block 85
+Reading jackknife block 86
+Reading jackknife block 87
+Reading jackknife block 88
+Reading jackknife block 89
+Reading jackknife block 90
+Reading jackknife block 91
+Reading jackknife block 92
+Reading jackknife block 93
+Reading jackknife block 94
+Reading jackknife block 95
+Reading jackknife block 96
+Reading jackknife block 97
+Reading jackknife block 98
+Reading jackknife block 99
+Finished reading and computing over all blocks
+
+Size of bins :
+Bin 0 : 454207
+Bin 1 : 454207
+Bin 2 : 454207
+Bin 3 : 454207
+Bin 4 : 454207
+Number of individuals without missing phenotype and enviromental variables: 285124
+
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00116378  SE : 0.000847359
+Sigma^2_gxe[0] : 0.14525  SE : 0.00115994
+Sigma^2_gxe[1] : 0.0299101  SE : 0.0015491
+Sigma^2_gxe[2] : -0.00614674  SE : 0.00137283
+Sigma^2_gxe[3] : 0.000953646  SE : 0.000713012
+Sigma^2_e : 0.96209  SE : 0.000390486
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00116368 SE : 0.000847285
+h2_gxe[0] : 0.0366196 SE : 0.000288229
+h2_gxe[1] : 0.00359404 SE : 0.000185238
+h2_gxe[2] : -0.00360084 SE : 0.000806105
+h2_gxe[3] : 0.000237726 SE : 0.000177693
+Total h2 : 0.0380142 SE: 0.000390444
+Total h2_g : 0.00116368 SE: 0.000847285
+Total h2_gxe : 0.0366196 SE: 0.000288229
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00116368 SE : 0.000847285
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.58428e-11
+GENIE ran successfully. Time elapsed = 7824 seconds 
+Profiling data written to: perf/aou_j100/aou_t512_timing.csv
+
+Done! Results written to perf/aou_j100/
+
+To plot results:
+  python scripts/plot_thread_scaling.py -i perf/aou_j100

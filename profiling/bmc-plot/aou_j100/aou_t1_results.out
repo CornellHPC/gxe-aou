@@ -1,0 +1,51 @@
+############################################################
+#                                                          #
+#                       GENIE (v1.2.1)                     #
+#                                                          #
+############################################################
+
+Seed = -1398172828
+Number of individuals after filtering: 285124
+Number of covariates: 32
+Number of environments: 4
+**************************************************
+Number of SNPs in bin 0 = 454207
+Number of SNPs in bin 1 = 454207
+Number of SNPs in bin 2 = 454207
+Number of SNPs in bin 3 = 454207
+Number of SNPs in bin 4 = 454207
+**************************************************
+Number of G variance components = 1
+Number of GxE variance components = 4
+Number of NxE variance components = 0
+**************************************************
+OUTPUT: 
+Variance components: 
+Sigma^2_g[0] : 0.00205275  SE : 0.000484293
+Sigma^2_gxe[0] : 0.216005  SE : 0.00195349
+Sigma^2_gxe[1] : 0.0198267  SE : 0.00128694
+Sigma^2_gxe[2] : -0.00672497  SE : 0.000793579
+Sigma^2_gxe[3] : -0.00112365  SE : 0.000676493
+Sigma^2_e : 0.945628  SE : 0.000518789
+**************************************************
+Heritabilities: 
+h2_g[0] : 0.00205258 SE : 0.000484253
+h2_gxe[0] : 0.054267 SE : 0.000477281
+h2_gxe[1] : 0.00239276 SE : 0.000154537
+h2_gxe[2] : -0.00395531 SE : 0.000468607
+h2_gxe[3] : -0.000281944 SE : 0.000169791
+Total h2 : 0.0544751 SE: 0.000518733
+Total h2_g : 0.00205258 SE: 0.000484253
+Total h2_gxe : 0.054267 SE: 0.000477281
+**************************************************
+Enrichments:
+G enrichment
+Enrichment g[0] : 1 SE : 0
+**************************************************
+**************************************************
+Heritabilities and enrichments computed (overlapping def)
+Heritabilities: 
+h2_g[0] : 0.00205258 SE : 0.000484253
+**************************************************
+Enrichments (overlapping def): 
+Enrichment g[0] : 1 SE : 5.89938e-11

@@ -1,0 +1,4 @@
+[submodule "profiling/GENIE"]
+	path = profiling/GENIE
+	url = git@github.com:alexanderschatzberg/GENIE.git
+	branch = self-time
